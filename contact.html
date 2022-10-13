@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/planetlogo.svg" />
+    <title>Solar System</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/planetlogo.svg" alt="Logo" class="logo" />
+        <div class="links">
+          <a href="./about.html" class="element">About</a>
+          <a href="./index.html" class="element">Home</a>
+          <div class="dropdown">
+            <a href="" class="drop-btn" class="element">Links</a>
+            <div class="dropdown-content">
+              <a href="https://en.wikipedia.org/wiki/Solar_System">Wikipedia</a>
+              <a href="https://solarsystem.nasa.gov/">Nasa</a>
+              <a href="https://www.britannica.com/science/solar-system"
+                >Britannica</a
+              >
+            </div>
+          </div>
+          <a href="./contact.html" class="element">Contact us</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Contact form -->
+    <main class="contact">
+      <div class="contactContainer">
+        <div id="fullName">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            class="inputStyle"
+            placeholder="Enter First Name..."
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            class="inputStyle"
+            placeholder="Enter Last Name..."
+          />
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="inputStyle"
+          placeholder="Enter Email..."
+        />
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="5"
+          placeholder="Enter your comment..."
+          class="inputStyle"
+        ></textarea>
+        <button type="submit" id="contactSubmit">Submit</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Solar System Group A3</p>
+    </footer>
+  </body>
+</html>

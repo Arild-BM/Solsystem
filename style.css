@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* style */
+body {
+  height: 100vh;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Space Mono", monospace;
+}
+
+/* Top navigation bar */
+/* size of logo */
+.logo {
+  width: 85px;
+  height: 80px;
+  padding-top: 12px;
+}
+
+/* Placement of top menu links */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d980;
+  padding-left: 8px;
+  padding-right: 18px;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+/* Styling of links in top menu */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Placement of links in top menu */
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+/* Padding of links in top menu (not visible) */
+.element {
+  padding: 0 10px;
+}
+
+/* Hover effect on top menu links - change color of padding */
+.element:hover {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #d9d9d9;
+  border: hidden;
+}
+/* The container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* The content is hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d9d9d9;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #564a59;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Main page */
+
+/* Put main menu and article side by side */
+main {
+  display: flex;
+}
+
+/* Background for main article */
+#main-page {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-color: #c5c6c780;
+  border-radius: 20px;
+  margin: 25px;
+}
+
+/* Margin of heading */
+#main-page h1 {
+  margin: 20px auto 10px;
+}
+
+/* Size of main image */
+#main-page img {
+  height: 200px;
+}
+
+/* Border radius of main image with all the planets */
+#main-page #planet-img {
+  border-radius: 20px;
+}
+
+/* Margins of main article */
+#desc {
+  margin: 20px;
+}
+
+/* Main navigation menu */
+.main-nav {
+  width: 190px;
+  background-color: #c5c6c780;
+  border-radius: 20px;
+  margin: 25px 0;
+  margin-left: 15px;
+}
+
+/* Vertical placement of planet icons */
+.planets {
+  display: flex;
+  margin-left: 20px;
+  height: 500px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Size of planet icons */
+.main-nav img {
+  width: 50px;
+  margin: 0px;
+}
+
+/* Size and placement of menu text */
+.main-nav span {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Vertical alignment of planet icon and text */
+.navn {
+  height: 50px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+}
+
+/* Enlarge picture when hover text area */
+.navn:hover > img {
+  transform: scale(1.2);
+}
+
+/* Change color of text when hover text area */
+.navn:hover {
+  color: blue;
+}
+
+/* Contact form and about-info*/
+/* Placement of text */
+.contact, .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Text color for "About" text */
+.about {
+  color: whitesmoke
+}
+
+/* Text color for links in about text */
+.about a {
+  color: #8FA2B9;
+  text-decoration: underline;
+}
+
+/* Apperance of contact form */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  width: 50%;
+  background-color: #d9d9d980;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 9px 9px 17px 4px rgba(0, 0, 0, 0.34);
+}
+
+/* Distance between first name and last name */
+#fullName {
+  display: flex;
+  gap: 15px;
+}
+
+/* Apperance of the input cells */
+.inputStyle {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Apperance of submit button */
+#contactSubmit {
+  margin: 0 auto;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #d9d9d980;
+}
+
+/* Footer text styling*/
+footer p {
+  font-size: 1.4rem;
+  padding: 5px;
+}
